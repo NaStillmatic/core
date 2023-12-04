@@ -32,4 +32,18 @@ public class ConfigurationSingletonTest {
         assertThat(memberService.getMemberRepository()).isSameAs(memberRepository);
         assertThat(orderService.getMemberRepository()).isSameAs(memberRepository);
     }
+
+    @Test
+    void configurationDeep() {
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        AppConfig bean = ac.getBean(AppConfig.class);
+
+        System.out.println("bean = " + bean.getClass());
+
+        /*
+            - @Bean 만 사용해도 스프링 빈으로 등록되지만, 싱글톤을 보장하지 않는다.
+            - memberRepository() 처럼 의존관계 주입이 필요해서 메서드를 직접 호출할때 싱글톤을 보장하지 않는다.
+            - 크게 고민할 것이 업다. 스프링 설정 정보는 항상 @Configuration 을 사용하자.
+         */
+    }
 }
