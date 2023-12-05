@@ -1,6 +1,6 @@
 package hello.core.service;
 
-import hello.core.config.AppConfig;
+import hello.core.AppConfig;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 

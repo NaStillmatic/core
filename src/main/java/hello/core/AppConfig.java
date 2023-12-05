@@ -1,4 +1,4 @@
-package hello.core.config;
+package hello.core;
 
 import hello.core.discount.DiscountPolicy;
 import hello.core.discount.RateDiscountPolicy;
@@ -8,6 +8,7 @@ import hello.core.repository.MemberRepository;
 import hello.core.repository.MemoryMemberRepository;
 import hello.core.service.MemberService;
 import hello.core.service.MemberServiceImpl;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

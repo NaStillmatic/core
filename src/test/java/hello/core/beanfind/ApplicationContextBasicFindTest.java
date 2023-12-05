@@ -1,6 +1,6 @@
 package hello.core.beanfind;
 
-import hello.core.config.AppConfig;
+import hello.core.AppConfig;
 import hello.core.service.MemberService;
 import hello.core.service.MemberServiceImpl;
 import org.junit.jupiter.api.DisplayName;

@@ -1,6 +1,6 @@
 package hello.core.scan;
 
-import hello.core.config.AutoAppConfig;
+import hello.core.AutoAppConfig;
 import hello.core.service.MemberService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

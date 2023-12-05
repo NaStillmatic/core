@@ -1,6 +1,6 @@
 package hello.core.singleton;
 
-import hello.core.config.AppConfig;
+import hello.core.AppConfig;
 import hello.core.service.MemberService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
