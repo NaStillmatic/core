@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
-@Component
+//@Component
 //@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
     final private MemberRepository memberRepository;
